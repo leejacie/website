@@ -1,0 +1,17 @@
+.room_a{
+    background-color: #FEC89A;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+}
+body{
+    background-color: #ffffff;
+}
+
+.room_b{
+    background-color: #F9DCC4;
+    width: 30%;
+    height: 30%;
+    left:33%;
+    position: absolute;
+}
