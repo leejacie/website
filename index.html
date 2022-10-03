@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Project</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+  </head>
+  
+  <body>
+    <div class="same">
+      <a href="intro_page.html">About Hotel</a>
+      <a href="index.html">Front Desk</a>
+      <a href="roomHistory.html">Room History</a>
+     </div>
+
+
+  <div class ="hotel">
+    <div class ="room_a">
+      <h3>Room A</h3>
+      <p>Please enter name for check in</p>
+      <input type="text" id ="guest">
+      <button onclick="check_in()">Checking In</button>
+      <button onclick="clear()">Checking Out</button>
+
+      <ol id ="guestlist"> </ol>
+      
+
+    </div>
+    
+    <div class="room_b">
+        <h3>Room B</h3>
+        <p>Please enter name for check in</p>
+        <input type="text" id ="guest2">
+        <button onclick="check_in2()">Checking In</button>
+        <button onclick="checkout2()">Checking Out</button>
+  
+        <ol id ="guestlist2"> </ol>
+  
+
+    </div>
+  </div>
+  
+  </body>
+  
+</html>
