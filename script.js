@@ -33,12 +33,12 @@ function addItem() {
 function addItem_b(){
     if (counter_b < 4){
         var a = document.getElementById("list1");
-        var candidate = document.getElementById("guest1").value;
+        var candidate = document.getElementById("guest1").value.toLowerCase();
         var li = document.createElement("li");
         check_in_time = Math.floor(Date.now() / 1000);
         console.log(check_in_time);
         li.setAttribute('id', candidate.value);
-        li.appendChild(document.createTextNode(candidate.value));
+        li.appendChild(document.createTextNode(candidate));
         a.appendChild(li); 
         counter_b++;
         console.log('room_b count ' + counter_b);
@@ -53,12 +53,12 @@ function addItem_b(){
 function addItem_c(){
     if (counter_c < 4){
         var a = document.getElementById("list2");
-        var candidate = document.getElementById("guest2").value;
+        var candidate = document.getElementById("guest2").value.toLowerCase();
         var li = document.createElement("li");
         check_in_time = Math.floor(Date.now() / 1000);
         console.log(check_in_time);
         li.setAttribute('id', candidate.value);
-        li.appendChild(document.createTextNode(candidate.value));
+        li.appendChild(document.createTextNode(candidate));
         a.appendChild(li);
         counter_c++;
         console.log('room_c count ' + counter_c);
@@ -73,12 +73,12 @@ function addItem_c(){
 function addItem_d(){
     if (counter_d < 4){
         var a = document.getElementById("list3");
-        var candidate = document.getElementById("guest3").value;
+        var candidate = document.getElementById("guest3").value.toLowerCase();
         var li = document.createElement("li");
         check_in_time = Math.floor(Date.now() / 1000);
         console.log(check_in_time);
         li.setAttribute('id', candidate.value);
-        li.appendChild(document.createTextNode(candidate.value));
+        li.appendChild(document.createTextNode(candidate));
         a.appendChild(li);
         counter_d++;
         console.log('room_d count ' + counter_d);
@@ -93,12 +93,12 @@ function addItem_d(){
 function addItem_e(){
     if (counter_e < 4){
         var a = document.getElementById("list4");
-        var candidate = document.getElementById("guest4").value;
+        var candidate = document.getElementById("guest4").value.toLowerCase();
         var li = document.createElement("li");
         check_in_time = Math.floor(Date.now() / 1000);
         console.log(check_in_time);
         li.setAttribute('id', candidate.value);
-        li.appendChild(document.createTextNode(candidate.value));
+        li.appendChild(document.createTextNode(candidate));
         a.appendChild(li);
         counter_e++;
         console.log('room_e count ' + counter_e);
@@ -113,12 +113,12 @@ function addItem_e(){
 function addItem_f(){
     if (counter_f < 4){
         var a = document.getElementById("list5");
-        var candidate = document.getElementById("guest5").value;
+        var candidate = document.getElementById("guest5").value.toLowerCase();
         var li = document.createElement("li");
         check_in_time = Math.floor(Date.now() / 1000);
         console.log(check_in_time);
         li.setAttribute('id', candidate.value);
-        li.appendChild(document.createTextNode(candidate.value));
+        li.appendChild(document.createTextNode(candidate));
         a.appendChild(li);
         counter_f++;
         console.log('room_f count ' + counter_f);
@@ -133,12 +133,12 @@ function addItem_f(){
 function addItem_g(){
     if (counter_g < 4){
         var a = document.getElementById("list6");
-        var candidate = document.getElementById("guest6").value;
+        var candidate = document.getElementById("guest6").value.toLowerCase();
         var li = document.createElement("li");
         check_in_time = Math.floor(Date.now() / 1000);
         console.log(check_in_time);
         li.setAttribute('id', candidate.value);
-        li.appendChild(document.createTextNode(candidate.value));
+        li.appendChild(document.createTextNode(candidate));
         a.appendChild(li);
         counter_g++;
         console.log('room_g count ' + counter_g);
@@ -153,12 +153,12 @@ function addItem_g(){
 function addItem_h(){
     if (counter_h < 4){
         var a = document.getElementById("list7");
-        var candidate = document.getElementById("guest7").value;
+        var candidate = document.getElementById("guest7").value.toLowerCase();
         var li = document.createElement("li");
         check_in_time = Math.floor(Date.now() / 1000);
         console.log(check_in_time);
         li.setAttribute('id', candidate.value);
-        li.appendChild(document.createTextNode(candidate.value));
+        li.appendChild(document.createTextNode(candidate));
         a.appendChild(li);
         counter_h++;
         console.log('room_h count ' + counter_h);
@@ -276,6 +276,17 @@ function removeItem_h(){
     document.getElementById("guest7").value = ""; 
     console.log(counter_h);
 
+}
+
+function clear_rooms() {
+    var e = document.querySelector("ol");
+    var first = e.firstElementChild;
+    while (first) {
+        first.remove();
+        first = e.firstElementChild;
+    }
+    var list = document.getElementById("list").onclick = function(){
+    deleteChild();}
 }
 
 function clear_rooms() {
