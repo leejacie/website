@@ -1,50 +1,129 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Project</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-  </head>
-  
-  <body>
-    <div class="same">
-      <a href="intro_page.html">About Hotel</a>
-      <a href="index.html">Front Desk</a>
-      <a href="roomHistory.html">Room History</a>
-     </div>
-
-
-  <div class ="hotel">
-    <div class ="room_a">
-      <h3>Room A</h3>
-      <p>Please enter name for check in</p>
-      <input type="text" id ="guest">
-      <button onclick="check_in()">Checking In</button>
-      <button onclick="clear()">Checking Out</button>
-
-      <ol id ="guestlist"> </ol>
-      
-
+   
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hotel Project</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+      </head>
+ 
+<body>
+      <a href="index.html"><img src="splogo.png" class = "center" width="230" height="210" ></a>
+    <div class="navbar">
+        <a href="intro.html">About Hotel</a>
+        <a href="index.html">Front Desk</a>
+        <a href="history.html">Room History</a> 
+         <!-- <p>line break cause <br/> did not work </p>-->
+         <!-- <p>line break cause <br/> did not work </p>-->
     </div>
-    
+    <div class ="hotel">
+        <div class ="room_a">
+          <h3>Room A</h3>
+          <p>Please enter name for check in</p>
+    <input type="text" id="guest">
+    <button onclick="addItem()" class="buttonClass">
+    Check In</button>
+    <button onclick="removeItem()" class="buttonClass">
+    Check Out</button>
+ 
+     <ol id="list"></ol>
+         </div>
+
+
     <div class="room_b">
         <h3>Room B</h3>
         <p>Please enter name for check in</p>
-        <input type="text" id ="guest2">
-        <button onclick="check_in2()">Checking In</button>
-        <button onclick="checkout2()">Checking Out</button>
+        <input type="text" id ="guest1">
+        <button onclick="addItem_b()">Checking In</button>
+        <button onclick="removeItem_b()">Checking Out</button>
   
-        <ol id ="guestlist2"> </ol>
-  
+        <ol id ="list1"> </ol>
+    </div>
+
+    <div class="room_c">
+      <h3>Room C</h3>
+      <p>Please enter name for check in</p>
+      <input type="text" id ="guest2">
+      <button onclick="addItem_c()">Checking In</button>
+      <button onclick="removeItem_c()">Checking Out</button>
+
+      <ol id ="list2"> </ol>
+    </div>
+   
+
+    <div class="room_d">
+      <h3>Room D</h3>
+      <p>Please enter name for check in</p>
+      <input type="text" id ="guest3">
+      <button onclick="addItem_d()">Checking In</button>
+      <button onclick="removeItem_d()">Checking Out</button>
+
+      <ol id ="list3"> </ol>
+
+      
+    </div>
+      
+    <div class="room_e">
+      <h3>Room E</h3>
+      <p>Please enter name for check in</p>
+      <input type="text" id ="guest4">
+      <button onclick="addItem_e()">Checking In</button>
+      <button onclick="removeItem_e()">Checking Out</button>
+
+      <ol id ="list4"> </ol>
+    </div>
+
+    <div class="room_f">
+      <h3>Room F</h3>
+      <p>Please enter name for check in</p>
+      <input type="text" id ="guest5">
+      <button onclick="addItem_f()">Checking In</button>
+      <button onclick="removeItem_f()">Checking Out</button>
+
+      <ol id ="list5"> </ol>
+    </div>
+
+    <div class="room_g">
+      <h3>Room G</h3>
+      <p>Please enter name for check in</p>
+      <input type="text" id ="guest6">
+      <button onclick="addItem_g()">Checking In</button>
+      <button onclick="removeItem_g()">Checking Out</button>
+
+      <ol id ="list6"> </ol>
+    </div>
+
+    <div class="room_h">
+      <h3>Room H</h3>
+      <p>Please enter name for check in</p>
+      <input type="text" id ="guest7">
+      <button onclick="addItem_h()">Checking In</button>
+      <button onclick="removeItem_h()">Checking Out</button>
+
+      <ol id ="list7"> </ol>
+    </div>
+
+    <div class="buttons">
+      <h3> </h3>
+      <p> </p>
+      <button onclick="clean()">Clean Rooms</button>
+      <button onclick="clear_room()">Clear Rooms</button>
 
     </div>
-  </div>
+
+    </div>
+
+    <div class="padding">
+      <p><!-- added just for bottom page white space--> </p>
+    </div>
+
+    
   
-  </body>
-  
+       
+</body>
+ 
 </html>
