@@ -1,17 +1,118 @@
+/* Room Book Setup*/
 .room_a{
     background-color: #FEC89A;
     width: 30%;
     height: 30%;
-    position: absolute;
+    left: 3%;
+    position: absolute; 
+    margin-top: 2%;
 }
 body{
     background-color: #ffffff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;
 }
 
 .room_b{
     background-color: #F9DCC4;
     width: 30%;
     height: 30%;
-    left:33%;
+    left:35%;
     position: absolute;
+    margin-top: 2%;
+}
+
+.room_c{
+    background-color: #FEC89A;
+    width: 30%;
+    height: 30%;
+    left:67%;
+    position: absolute;
+    margin-top: 2%;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    text-align: center;
+    font-size: large;
+}
+
+.room_d{
+    background-color: #F9DCC4;
+    width: 30%;
+    height: 30%;
+    left: 3%;
+    margin-top: 20%;
+    position: absolute; 
+}
+
+.room_e{
+    background-color: #FEC89A;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+    margin-top: 20%;
+    position: absolute; 
+}
+
+.room_f{
+    background-color: #F9DCC4;
+    width: 30%;
+    height: 30%;
+    left:67%;
+    margin-top: 20%;
+    position: absolute; 
+}
+
+.room_g{
+    background-color: #FEC89A;
+    width: 30%;
+    height: 30%;
+    left: 3%;
+    margin-top: 38%;
+    position: absolute; 
+}
+
+.room_h{
+    background-color: #F9DCC4;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+    margin-top: 38%;
+    position: absolute; 
+}
+
+.buttons{
+    background-color: #FEC89A;
+    width: 30%;
+    height: 30%;
+    left: 67%;
+    margin-top: 38%;
+    position: absolute; 
+}
+
+.padding{
+   padding-top: 60%; 
+}
+
+.room_g2{
+    background-color: #FEC89A;
+    width: 30%;
+    height: 30%;
+    left: 15%;
+    margin-top: 38%;
+    position: absolute; 
+}
+
+.room_h2{
+    background-color: #FEC89A;
+    width: 30%;
+    height: 30%;
+    left: 55%;
+    margin-top: 38%;
+    position: absolute; 
 }
