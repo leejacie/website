@@ -36,6 +36,10 @@ body{
     margin-right: auto;
 }
 
+.center:hover{
+    opacity: 50%;
+}
+
 .navbar{
     text-align: center;
     font-size: large;
@@ -115,4 +119,18 @@ body{
     left: 55%;
     margin-top: 38%;
     position: absolute; 
+}
+
+.home{
+    background-image: url("https://travellersworldwide.com/wp-content/uploads/2022/07/shutterstock_1833685522.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    padding: 10%;
+    color: aliceblue;
+}
+
+.logo:hover{
+    opacity: 50%;
 }
